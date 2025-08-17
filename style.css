@@ -1,0 +1,633 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(250, 235, 215, 0.321);
+}
+
+:root {
+    --nav-text-color: #923737;
+    --nav-font-family: "Baloo Paaji 2", sans-serif;
+    --text-font-family: "Baloo Paaji 2", sans-serif;
+    --grid-places-font-size: 1.4rem;
+    --text-para-color-primary:rgba(188, 91, 91, 0.829);
+    --text-heading-color:brown;
+    --text-para-color-secondary:rgb(41, 41, 41);
+    
+
+}
+
+.baloo-paaji-2 {
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+#navbar {
+    display: flex;
+    background-color: antiquewhite;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 50px;  */
+    margin: auto;
+    flex-wrap: wrap;
+}
+#navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--nav-text-color);
+    gap: 10px;
+    font-family: var(--nav-font-family);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menubar {
+    display: flex;
+    /* margin-left: 20px; */
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    /* margin-left: 10%; */
+}
+
+.menubar-item {
+    list-style: none;
+    font-family: var(--nav-font-family);
+    font-size: 1.3rem;
+}
+
+.menubar-item>a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+.menubar-item>a:hover {
+    color: rgb(133, 141, 141);
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--nav-text-color);
+}
+
+.searchbar>* {
+    border-radius: 8px;
+    background-color: snow;
+    border: none;
+    font-size: 1.2rem;
+    font-family: var(--nav-font-family);
+    padding: 0px 20px;
+}
+
+.searchbar>button {
+    background-color: #8f4b4b;
+}
+
+.searchbar>button:hover {
+    background-color: #996969;
+}
+
+.go-btn {
+    text-decoration: none;
+    color: snow;
+}
+
+@media (max-width:1210px) {
+    #navbar {
+        flex-wrap: wrap;
+    }
+
+    #navbar-logo {
+        flex-basis: auto;
+    }
+
+    .menubar {
+        flex-basis: auto;
+    }
+
+    .searchbar {
+        flex-basis: auto;
+    }
+}
+
+@media (max-width:710px) {
+    #navbar {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menubar {
+        display: none;
+    }
+    .searchbar {
+        display: none;
+    }
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    background-color: snow;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 66px;
+
+}
+
+.hero-text {
+    font-family: "Baloo Paaji 2", sans-serif;
+    order: 0;
+    font-size: clamp(1rem, 45vw, 1.8rem);
+    color: var(--text-para-color-secondary);
+}
+.hero-text-heading-highlighted {
+    color: rgb(215, 148, 75);
+
+}
+
+.hero-img {
+    order: 1;
+}
+
+.hero-img img {
+    width: 35vw;
+    height: auto;
+}
+
+@media (max-width:710px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+
+    .hero-img {
+        order: -1;
+    }
+}
+
+/* why encridible cards section  */
+
+.encredible-row {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    max-width: 80vw;
+    margin: auto;
+    font-family: var(--text-font-family);
+    font-size: 1.2rem;
+}
+
+.why-encredible-text {
+    background-color: purple;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+.cards-main-heading {
+    color: white;
+
+}
+
+.cards-main-para {
+    color: var(--text-para-color-secondary);
+    font-size: 1.25em;
+}
+
+.why-encredible-cards {
+    display: flex;
+    text-align: justify;
+
+}
+
+.cards {
+    padding: 0px 20px;
+}
+
+.cards img {
+    border-radius: 50%;
+    height: 180px;
+    width: 210px;
+    object-fit: cover;
+}
+
+.cards-heading {
+    color: rgba(154, 44, 44, 0.829);
+
+}
+
+.cards-para {
+    color: var(--text-para-color-primary);
+}
+
+/* media querry section for cards */
+
+@media (max-width:1240px) {
+    .why-encredible-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cards {
+        flex: 1;
+    }
+
+}
+
+@media (max-width:635px) {
+    .why-encredible-cards {
+        text-align: center;
+    }
+}
+
+/* places section */
+
+.places-header {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-size: 1.5rem;
+    color: var(--text-heading-color);
+}
+
+.places-container {
+    max-width: 80vw;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.places-box {
+    background-color: aquamarine;
+}
+
+.places-text {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.box1 {
+    background-image: url(./images/india-gate.jpg);
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--text-font-family);
+    font-size: var(--grid-places-font-size);
+    grid-row: span 2;
+}
+
+.box2 {
+    background-image: url(./images/tajmahal.jpeg);
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--text-font-family);
+    font-size: var(--grid-places-font-size);
+    grid-column: span 2;
+}
+
+.box3 {
+    background-image: url(./images/gateway-of-india.jpg);
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--text-font-family);
+    font-size: var(--grid-places-font-size);
+    grid-row: span 1;
+}
+
+.box4 {
+    background-image: url(./images/qutub-minar.jpg);
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--text-font-family);
+    font-size: var(--grid-places-font-size);
+    grid-row: span 2;
+}
+
+.box5 {
+    background-image: url(./images/amer-fort.jpg);
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--text-font-family);
+    font-size: var(--grid-places-font-size);
+    grid-column: span 2;
+}
+
+@media (max-width:1300px) {
+    .places-container {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .box2 {
+        order: -10;
+    }
+
+    .box5 {
+        grid-area: 4/1/5/2;
+    }
+}
+
+ @media (max-width:565px){
+     .places-container {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 350px 200px 300px 400px 500px ;
+        height: auto;
+    }
+
+    .places-box {
+        grid-column: 1;
+    }
+} 
+
+/* temple section carosuel */
+.temples-section {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 80vw;
+    overflow: hidden;
+    
+
+}
+
+.temples-header {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-size: 1.5rem;
+    color: var(--text-heading-color);
+}
+.temples-header-para {
+ color: var(--text-para-color-primary);
+ font-size: 1.1em;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 31s linear infinite;
+
+}
+.carousel-track img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin-right: 75px;
+    margin-left: 75px;
+    object-fit: cover;
+}
+.carousel-track h3 {
+    text-align: center;
+    font-family: var(--text-font-family);
+}
+ 
+@keyframes scroll {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:1500px) {
+    .carousel-track {
+        animation: scroll 15s linear infinite;
+    }
+
+
+}
+@media (max-width:800px)
+ {
+    .carousel-track {
+        animation: scroll 50s linear infinite;
+
+    }
+@keyframes scroll {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    100% {
+        transform: translateX(-5000px);
+    }
+
+} }
+
+/* natural wonder section */
+.natural-wonders-section {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    margin-top: 30px; 
+}
+
+.natural-header {
+    
+    background-color: purple;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.natural-header-heading{
+    font-family: var(--text-font-family);
+    font-size: 1.6rem;
+    /* color: var(--text-heading-color); */
+    color: white;
+}
+.natural-header-para{
+    font-family: var(--text-font-family);
+    color: var(--text-para-color-secondary);
+    font-size: 1.5em;
+}
+
+.natural-wonders-container{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.nw-img-box img {
+    width: 18vw;
+    height: auto;
+}
+.nw-text-box{
+    font-family: var(--text-font-family);
+    line-height: 13px;
+}
+.nw-text-box-heading {
+    font-size: 2.5em;
+}
+
+.nw-text-box-heading-highlighted {
+    color: green;
+}
+.nw-text-box-para {
+    font-size: 1.5em;
+    color: var(--text-para-color-primary);
+}
+
+@media (max-width:1000px) {
+    .nw-text-box{
+    
+    line-height: 12px;
+}
+.nw-text-box-heading {
+    font-size: 1.5em;
+}
+.nw-text-box-para {
+    font-size: 1em;
+    color: var(--text-para-color-primary);
+}
+    
+}
+@media (max-width:550px) {
+    .nw-text-box{
+    
+    line-height: 12px;
+}
+.nw-text-box-heading {
+    font-size: 1em;
+}
+.nw-text-box-para {
+    font-size: .7em;
+    color: var(--text-para-color-primary);
+    line-height: 12px;
+}   
+}
+
+/* section nw-gallary */
+.nw-gallary-container {
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr   ;
+    gap: 10px;     
+}
+
+.nw-gallary-container img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 10px;
+}
+
+#nw-gallary-img1 {
+    grid-column: span 2;
+    grid-row: span 2; 
+}
+#nw-gallary-img2 {
+    grid-column: span 2;
+    grid-row: span 1; 
+}
+#nw-gallary-img3 {
+    grid-column: span 1;
+    grid-row: span 1; 
+    
+}
+#nw-gallary-img4 {
+    grid-column: span 1;
+    grid-row: span 1; 
+}
+#nw-gallary-img5 {
+    grid-column: span 2;
+    grid-row: span 1; 
+}
+#nw-gallary-img6 {
+    grid-column: span 2;
+    grid-row: span 1; 
+}
+
+/* section-contact-us */
+footer> div{
+display: block;
+width: 100%;
+height: 100px;
+background-color: antiquewhite;
+margin-top: 50px;
+text-align: center;
+vertical-align: bottom;
+color: var(--nav-text-color);
+font-family: var(--text-font-family);
+padding: 25px;
+}

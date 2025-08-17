@@ -1,0 +1,115 @@
+Page 1 – Home
+Hero section: Full-width background image of India Gate lit with tricolour.
+
+Title: Explore the Incredible India
+
+Subtitle: A journey through culture, adventure, and timeless beauty.
+
+Button: “Discover More” (links to next page)
+
+Sticky Navigation Menu:
+
+Home | Why Incredible? | Places & Experiences | Contact Us
+
+(Optional dropdown for “States” or “Adventures”)
+
+Page 2 – Why Incredible?
+Section with short paragraphs + icons explaining what makes India unique:
+
+Culture & Traditions
+
+Diverse Landscapes
+
+Heritage & Monuments
+
+Adventure Sports
+
+Page 3 – Places & Experiences
+Card layout with circular images (Bootstrap or pure CSS):
+
+Places: Taj Mahal, India Gate, Kedarnath Temple, Andaman & Nicobar Islands, Meghalaya Living Roots Bridge
+
+Experiences: Delhi Street Food, Mumbai Nightlife, Bir Billing Paragliding, Rishikesh River Rafting
+
+Each card: small heading + short engaging description
+Historical & Heritage Sites
+
+Taj Mahal (Agra, Uttar Pradesh)
+
+Qutub Minar (Delhi)
+
+Red Fort (Delhi)
+
+India Gate (Delhi)
+
+Mysore Palace (Mysuru, Karnataka)
+
+Hawa Mahal (Jaipur, Rajasthan)
+
+Amer Fort (Jaipur, Rajasthan)
+
+Gateway of India (Mumbai, Maharashtra)
+
+Spiritual & Religious Places
+
+Kedarnath Temple (Uttarakhand)
+
+Badrinath Temple (Uttarakhand)
+
+Golden Temple (Amritsar, Punjab)
+
+Somnath Temple (Gujarat)
+
+Meenakshi Temple (Madurai, Tamil Nadu)
+
+<!-- Natural Wonders
+
+Valley of Flowers (Uttarakhand)
+
+Pangong Lake (Ladakh)
+
+Backwaters of Kerala (Kerala)
+
+Rann of Kutch (Gujarat)
+
+Sundarbans (West Bengal)
+
+Hill Stations & Scenic Destinations
+
+Shimla (Himachal Pradesh)
+
+Manali (Himachal Pradesh)
+
+Darjeeling (West Bengal)
+
+Ooty (Tamil Nadu)
+
+Munnar (Kerala) -->
+
+Page 4 – Contact Us
+Simple form: Name, Email, Message, Submit Button
+
+Option: “Request a Guide” checkbox
+
+Footer: Social links, copyright (© 2025 Incredible India | All Rights Reserved)
+
+Extra Touches
+Add hover effects for cards (slight scale-up and shadow)
+
+Use tricolour gradient in small UI details (menu hover underline, buttons, section titles)
+
+Maybe include a scroll-to-top button
+
+💡 On your menu idea: Instead of making it too broad, I’d keep:
+
+Home
+
+Why Incredible?
+
+Places (could be a dropdown for “States”)
+
+Experiences (could be a dropdown for “Adventure” & “Culture”)
+
+Contact
+
+That keeps it clean but still allows for expansion.
