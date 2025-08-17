@@ -626,7 +626,6 @@ height: 100px;
 background-color: antiquewhite;
 margin-top: 50px;
 text-align: center;
-vertical-align: bottom;
 color: var(--nav-text-color);
 font-family: var(--text-font-family);
 padding: 25px;
